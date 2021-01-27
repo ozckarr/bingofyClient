@@ -1,0 +1,173 @@
+.size-container {
+  max-width: 400px;
+  margin: auto;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+label,
+div.header {
+  font-family: "Orbitron", sans-serif !important;
+}
+
+.page-title {
+  display: block !important;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+.bingoContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.bingoBox {
+  width: 20%;
+  outline: 0.1em solid black;
+  text-align: center;
+  height: 7em;
+  word-break: break-all;
+}
+
+//bingoCreator
+.creatorBingoContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  outline: 0.1em solid black;
+  .creatorBingoBox {
+    position: relative;
+    width: 20%;
+    outline: 0.1em solid black;
+    overflow-wrap: anywhere;
+    p {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      width: 100%;
+      padding: 0.1em;
+    }
+  }
+
+  .creatorBingoBox:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    .content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .selected {
+    border: 0.3em solid #f2711c;
+  }
+}
+
+//bingo Layout
+.layOutBingo {
+  position: relative;
+  width: 100%;
+}
+.layOutBingoContainer {
+  z-index: -10;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  outline: 0.1em solid black;
+  .layOutBingoBox {
+    position: relative;
+    width: 20%;
+    outline: 0.1em solid black;
+    overflow-wrap: anywhere;
+    p {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      width: 100%;
+      padding: 0.1em;
+    }
+  }
+
+  .layOutBingoBox:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    .content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.layOutBingoOverlay {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  .layOutBingoBoxOverlay {
+    position: relative;
+    width: 20%;
+  }
+  .layOutBingoBoxOverlay.checked {
+    background-image: url("../src/images/checked.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .layOutBingoBoxOverlay:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    .content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.dropzone {
+  height: 8em;
+  width: 100%;
+  text-align: center;
+  border: 0.2em dashed #53321b;
+  padding-top: 3em;
+}
+
+.dropzoneActive {
+  border: 0.2em solid #53321b;
+}
+
+.dropzoneFull {
+  height: 8em;
+  width: 100%;
+  text-align: center;
+  border: 0.2em solid #53321b;
+  padding-top: 3em;
+  background: repeating-linear-gradient(
+    45deg,
+    #fff,
+    #fff 10px,
+    #53321b 10px,
+    #53321b 20px
+  );
+}
+
+.summery {
+  width: 80%;
+  overflow-wrap: break-word;
+}
