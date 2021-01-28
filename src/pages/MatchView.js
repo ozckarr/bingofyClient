@@ -105,6 +105,8 @@ function MatchView(props) {
     // The "ready?" button hides this, and refetches.
     if (boxOrder === "noBoxOrder") {
       bingoMarkup = (
+        <div style={{margin: "auto"}}>
+
         <Card style={{ marginTop: "3em" }} color="orange">
           <Button
             color="orange"
@@ -115,6 +117,7 @@ function MatchView(props) {
             Redo?
           </Button>
         </Card>
+        </div>
       );
     } else {
       bingoMarkup = (
