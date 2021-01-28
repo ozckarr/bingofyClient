@@ -6,7 +6,7 @@ import rearrangeBingoBoxes from "../util/rearrangeBingoBoxes";
 
 import { Image } from "cloudinary-react";
 
-const { REACT_APP_CLOUDINARY_CLOUD_NAME } = process.env;
+const { REACT_APP_CLOUDINARY_CLOUD_NAME } = require("../util/config");
 
 function HighscoreView(props) {
   const matchId = props.match.params.matchId;

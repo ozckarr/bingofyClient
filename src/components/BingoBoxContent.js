@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Popup, Card } from "semantic-ui-react";
 import { Image } from "cloudinary-react";
 
-const { REACT_APP_CLOUDINARY_CLOUD_NAME } = process.env;
+const { REACT_APP_CLOUDINARY_CLOUD_NAME } = require("../util/config");
 
 function BingoBoxContent({
   props: { id, title, summery, checked, cloudinaryId },

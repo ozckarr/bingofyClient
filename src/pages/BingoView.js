@@ -19,7 +19,7 @@ import { Redirect } from "react-router-dom";
 const {
   REACT_APP_CLOUDINARY_CLOUD_NAME,
   REACT_APP_CLOUDINARY_UPLOAD_PRESET,
-} = process.env;
+} = require("../util/config");
 
 function BingoView(props) {
   const bingoId = props.match.params.bingoId;

@@ -14,7 +14,7 @@ import VictoryCheck from "../components/VictoryCheck";
 
 import { Image } from "cloudinary-react";
 
-const { REACT_APP_CLOUDINARY_CLOUD_NAME } = process.env;
+const { REACT_APP_CLOUDINARY_CLOUD_NAME } = require("../util/config");
 
 function MatchView(props) {
   const matchId = props.match.params.matchId;
