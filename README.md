@@ -1,6 +1,7 @@
+Bingo app server. You also need https://github.com/ozckarr/bingofyClient
 
-Bingo app client. You also need https://github.com/ozckarr/bingofyServer
+Install
+`npm i`
 
+start
 `npm start`
-
-`npm run build`
